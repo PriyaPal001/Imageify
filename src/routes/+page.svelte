@@ -16,6 +16,7 @@
   import * as DropdownMenu from "$lib/components/ui/dropdown-menu/index.js";
   import { Input } from "$lib/components/ui/input/index.js";
   import * as Sheet from "$lib/components/ui/sheet/index.js";
+	import Modes from "$lib/components/ui/lightDark/modes.svelte";
 </script>
 
 <div class="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
@@ -179,6 +180,7 @@
           </div>
         </form>
       </div>
+      <Modes />
       <DropdownMenu.Root>
         <DropdownMenu.Trigger asChild let:builder>
           <Button
